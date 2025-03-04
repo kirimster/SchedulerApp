@@ -1,0 +1,199 @@
+/* Основные цвета */
+:root {
+    --color-primary: #E9E9E5;
+    /* Светлый серый (основной) */
+    --color-secondary: #D4D6C8;
+    /* Светлый серо-зеленый */
+    --color-accent: #9A9B94;
+    /* Средний серый */
+    --color-background: #52524E;
+    /* Темный серый (фон) */
+}
+
+/* Общие стили */
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: var(--color-background);
+    /* Основной цвет текста (темный серый) */
+    background-color: var(--color-primary);
+    /* Фон страницы (светлый серый) */
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-accent);
+    /* Цвет ссылок (средний серый) */
+}
+
+a:hover {
+    color: var(--color-background);
+    /* Цвет ссылок при наведении (темный серый) */
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h2,
+h3 {
+    margin: 0;
+    font-weight: bold;
+    color: var(--color-background);
+    /* Цвет заголовков (темный серый) */
+}
+
+/* Шапка */
+header {
+    background-color: var(--color-secondary);
+    /* Фон шапки (светлый серо-зеленый) */
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Навигация */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--color-accent);
+    /* Фон навигации (средний серый) */
+    padding: 10px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    margin-right: 30px;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--color-primary);
+    /* Цвет текста ссылок в навигации (светлый серый) */
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+nav a:hover {
+    color: var(--color-background);
+    /* Цвет ссылок при наведении (темный серый) */
+}
+
+/* Секция меню */
+.menu {
+    background-image: url('path/to/menu-image.jpg');
+    /* Фоновое изображение для меню */
+    background-size: cover;
+    background-position: center;
+    height: 580px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: var(--color-background);
+    /* Цвет текста (темный серый) */
+}
+
+.menu h1 {
+    font-size: 48px;
+    color: var(--color-background);
+    /* Цвет заголовка (темный серый) */
+    margin-bottom: 20px;
+}
+
+.menu p {
+    font-size: 24px;
+    color: var(--color-background);
+    /* Цвет текста (темный серый) */
+    margin-bottom: 40px;
+}
+
+.menu .btn {
+    font-size: 18px;
+    background-color: var(--color-accent);
+    /* Цвет кнопки (средний серый) */
+    color: var(--color-primary);
+    /* Цвет текста на кнопке (светлый серый) */
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.menu .btn:hover {
+    background-color: var(--color-background);
+    /* Цвет кнопки при наведении (темный серый) */
+    color: var(--color-primary);
+    /* Цвет текста на кнопке (светлый серый) */
+}
+
+/* Секция с услугами */
+.services {
+    padding: 50px;
+    background-color: var(--color-primary);
+    /* Фон секции (светлый серый) */
+}
+
+.services h2 {
+    margin-bottom: 28px;
+    color: var(--color-background);
+    /* Цвет заголовка (темный серый) */
+}
+
+.services h3 {
+    margin-bottom: 18px;
+    color: var(--color-background);
+    /* Цвет подзаголовка (темный серый) */
+}
+
+.services p {
+    margin-bottom: 30px;
+    color: var(--color-background);
+    /* Цвет текста (темный серый) */
+}
+
+/* Секция контактов */
+.contact {
+    padding: 50px;
+    background-color: var(--color-secondary);
+    /* Фон секции (светлый серо-зеленый) */
+}
+
+.contact h2 {
+    margin-bottom: 20px;
+    color: var(--color-background);
+    /* Цвет заголовка (темный серый) */
+}
+
+.contact ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.contact li {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.contact p {
+    margin: 0;
+    color: var(--color-background);
+    /* Цвет текста (темный серый) */
+}
